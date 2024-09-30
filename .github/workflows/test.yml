@@ -2,7 +2,7 @@ name: Test Project
 on: push
 jobs:
     test:
-        runs-on: macos14
+        runs-on: macos-14
         steps:
             - name: Get Code
               uses: actions/checkout@v3
