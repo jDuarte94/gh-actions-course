@@ -1,8 +1,5 @@
 name: Deploy Project
-on: 
-    push:
-        branches:
-            - "s2-section"
+on: push
 jobs:
     lint:
         runs-on: macos-14
