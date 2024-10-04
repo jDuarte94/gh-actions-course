@@ -36,5 +36,11 @@ jobs:
     needs: build
     runs-on: macos-14
     steps:
+      - name: Get build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files #same name
+      - name: Output contents
+        run: ls
       - name: Deploy
         run: echo "Deploying..."
