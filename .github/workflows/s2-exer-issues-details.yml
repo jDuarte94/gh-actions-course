@@ -1,0 +1,8 @@
+name: Output Issues Information
+on: issues
+jobs:
+    info:
+        runs-on: macos-14
+        steps:
+            - name: Output Issues context
+              run: echo "${{ toJson(github.event) }}"
